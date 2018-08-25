@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-		sh 'echo "Hello World"'
+		sh 'echo "Hello World in branch2 ------======="'
                 sh 'npm --version'
 		sh '''
-			echo "Multiline shell steps works too"
+			echo "======branch2======== Multiline shell steps works too"
 			ls -lah
 		'''
             }
